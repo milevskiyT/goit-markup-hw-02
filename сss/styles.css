@@ -10,75 +10,77 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 .page {
-  color:var(--primary-text-color);
-  background-color:var(--primary-background-color)
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
 }
 /* сховав точки */
 ul {
   list-style: none;
 }
 
-
 /* LOGOGOGOGOGOGOG */
-.logo{
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 26px;
-line-height: 31px;
-    color:rgba(0, 0, 0, 1);
+.logo {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  color: rgba(0, 0, 0, 1);
 }
-.logoweb{
-    color: rgba(33, 150, 243, 1);}
+.logoweb {
+  color: rgba(33, 150, 243, 1);
+}
 .logo:hover,
-.logo:focus{
-  color:rgba(33, 150, 243, 1);
+.logo:focus {
+  color: rgba(33, 150, 243, 1);
 }
 /* NAVIGATION */
 
-.site-nav .link {color:var(--primary-text-color)
-Font family: 'Roboto';
-Font style: Medium;
-Font size: 14px;
-Line height: 16px;
-Line height: 100%;
+.site-nav .link {
+  font-family: 'Roboto';
+  font-style: Medium;
+  font-size: 14px;
+  line-height: 16px;
+  line-height: 100%;
+  color: var(--primary-text-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: rgba(33, 150, 243, 1);}
-  /* tel+adress */
-.auth-nav .link-nav{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.02em;
-color:var(--primary-text-color)
+  color: rgba(33, 150, 243, 1);
+}
+/* tel+adress */
+.auth-nav .link-nav {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 .auth-nav .link-nav:hover,
-.auth-nav .link-nav:focus{
-color: rgba(33, 150, 243, 1);
+.auth-nav .link-nav:focus {
+  color: rgba(33, 150, 243, 1);
 }
 
 /* кнопки rgba(33, 33, 33, 1)Font family: Roboto
 Font style: Medium
 Font size: 16px
 Line height: 26px */
-.button-portfolio{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 26px;
-color:var(--primary-text-color);
+.button-portfolio {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--primary-text-color);
 }
 .button .button-portfolio:hover,
-.button .button-portfolio:focus{
+.button .button-portfolio:focus {
   color: var(--logo-link-color);
 }
 
-/* h2h2h2h2h2h section with foto */   
+/* h2h2h2h2h2h section with foto */
 /* font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -89,66 +91,65 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 30px; */
-.foto 
-{
-
+.foto {
 }
-.filter{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 36px;
-color: var(--primary-text-color);
-} 
-.filter-foto{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 30px;
-color: rgba(117, 117, 117, 1);
+.filter {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  color: var(--primary-text-color);
+}
+.filter-foto {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(117, 117, 117, 1);
 }
 /* footer */
-.footerbg{
-
+.footerbg {
 }
-.logofot{
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 26px;
-line-height: 31px;
+.logofot {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
   color: rgba(255, 255, 255, 1);
 }
-.logo-fotweb{
-color: rgba(33, 150, 243, 1);
+.logo-fotweb {
+  color: rgba(33, 150, 243, 1);
 }
 .logofot:hover,
-.logofot:focus{
-  color:rgba(33, 150, 243, 1);
+.logofot:focus {
+  color: rgba(33, 150, 243, 1);
 }
 
 /* adress */
-.footerbg{
+.footerbg {
   background-color: rgba(47, 48, 58, 1);
 }
 .footer-nav .footer-link:hover,
-.footer-nav .footer-link:focus{
-color: var(--logo-link-color);}
+.footer-nav .footer-link:focus {
+  color: var(--logo-link-color);
+}
 
-.footer-maps{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-color: 
-rgba(255, 255, 255, 1);}
-.footer-link{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-color:rgba(255, 255, 255, 0.6);}
+.footer-maps {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+}
+.footer-link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+}
