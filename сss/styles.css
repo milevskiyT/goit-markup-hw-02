@@ -6,6 +6,7 @@
   --secondary-text: rgba(117, 117, 117, 1);
   --third-text: rgba(255, 255, 255, 0.6);
   --hero-color: rgba(47, 48, 58, 1);
+  --active-button: rgba(24, 140, 232, 1);
 }
 
 body {
@@ -86,7 +87,7 @@ ul {
   font-size: Medium;
   font-size: 16px;
   line-height: 1.6;
-  align: Center;
+  box-align: Center;
   vertical-align: Top;
   letter-spacing: 3%;
   color: var(--primary-text-color);
@@ -171,8 +172,59 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   color: var(--primary-background-color);
   background-color: var(--logo-link-color);
+}
+.button-hero:hover,
+.button-hero:focus {
+  color: var(--primary-background-color);
+  background-color: var(--active-button);
+}
+/* пер(peculiarities)-особливості */
+.peculiarities {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.peculiarities-list {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text);
+}
+.section-tittle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.team {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.team-work {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text);
 }
