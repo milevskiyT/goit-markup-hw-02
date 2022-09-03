@@ -58,7 +58,7 @@ ul {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   text-decoration: none;
@@ -91,6 +91,7 @@ ul {
   vertical-align: Top;
   letter-spacing: 3%;
   color: var(--primary-text-color);
+  cursor: pointer;
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
@@ -228,3 +229,5 @@ ul {
   letter-spacing: 0.03em;
   color: var(--secondary-text);
 }
+/* /* cursor зі значенням pointer. */
+/* cursor: pointer; */
