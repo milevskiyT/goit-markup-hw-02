@@ -3,19 +3,32 @@
   --logo-link-color: rgba(33, 150, 243, 1);
   --logo-color: rgba(0, 0, 0, 1);
   --primary-background-color: rgba(255, 255, 255, 1);
+  --secondary-text: rgba(117, 117, 117, 1);
+  --third-text: rgba(255, 255, 255, 0.6);
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
-.page {
+page {
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
 }
 /* сховав точки */
 ul {
   list-style: none;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 /* LOGOGOGOGOGOGOG */
@@ -24,29 +37,32 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  color: rgba(0, 0, 0, 1);
+  line-height: 1.2;
+  color: var(--logo-color);
+  text-decoration: none;
 }
 .logoweb {
-  color: rgba(33, 150, 243, 1);
+  color: var(--logo-link-color);
 }
 .logo:hover,
 .logo:focus {
-  color: rgba(33, 150, 243, 1);
+  color: var(--logo-link-color);
 }
 /* NAVIGATION */
 
 .site-nav .link {
   font-family: 'Roboto';
-  font-style: Medium;
+  font-style: normal;
+  font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
-  line-height: 100%;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: rgba(33, 150, 243, 1);
+  color: var(--logo-link-color);
 }
 /* tel+adress */
 .auth-nav .link-nav {
@@ -54,80 +70,62 @@ ul {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  color: var(--secondary-text);
+  text-decoration: none;
 }
 .auth-nav .link-nav:hover,
 .auth-nav .link-nav:focus {
-  color: rgba(33, 150, 243, 1);
+  color: var(--logo-link-color);
 }
-
-/* кнопки rgba(33, 33, 33, 1)Font family: Roboto
-Font style: Medium
-Font size: 16px
-Line height: 26px */
 .button-portfolio {
   font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
+  font-size: Medium;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.6;
+  align: Center;
+  vertical-align: Top;
+  letter-spacing: 3%;
   color: var(--primary-text-color);
 }
 .button .button-portfolio:hover,
 .button .button-portfolio:focus {
-  color: var(--logo-link-color);
+  background-color: var(--logo-link-color);
 }
-
-/* h2h2h2h2h2h section with foto */
-/* font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 36px; */
-/* pppppp font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 30px; */
 .foto {
 }
 .filter {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
+  letter-spacing: 0.06em;
   color: var(--primary-text-color);
 }
 .filter-foto {
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
-  color: rgba(117, 117, 117, 1);
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text);
 }
 /* footer */
-.footerbg {
-}
 .logofot {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  color: rgba(255, 255, 255, 1);
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--primary-background-color);
+  text-decoration: none;
 }
 .logo-fotweb {
-  color: rgba(33, 150, 243, 1);
+  color: var(--logo-link-color);
 }
 .logofot:hover,
 .logofot:focus {
-  color: rgba(33, 150, 243, 1);
+  color: var(--logo-link-color);
 }
-
 /* adress */
 .footerbg {
   background-color: rgba(47, 48, 58, 1);
@@ -136,20 +134,16 @@ line-height: 30px; */
 .footer-nav .footer-link:focus {
   color: var(--logo-link-color);
 }
-
-.footer-maps {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(255, 255, 255, 1);
-}
 .footer-link {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--third-text);
+}
+.navigation {
+  color: var(--primary-background-color);
 }
