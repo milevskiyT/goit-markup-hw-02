@@ -5,6 +5,7 @@
   --primary-background-color: rgba(255, 255, 255, 1);
   --secondary-text: rgba(117, 117, 117, 1);
   --third-text: rgba(255, 255, 255, 0.6);
+  --hero-color: rgba(47, 48, 58, 1);
 }
 
 body {
@@ -49,6 +50,7 @@ ul {
   color: var(--logo-link-color);
 }
 /* NAVIGATION */
+/* Portfolio */
 
 .site-nav .link {
   font-family: 'Roboto';
@@ -89,12 +91,13 @@ ul {
   letter-spacing: 3%;
   color: var(--primary-text-color);
 }
-.button .button-portfolio:hover,
-.button .button-portfolio:focus {
+.button-portfolio:hover,
+.button-portfolio:focus {
   background-color: var(--logo-link-color);
+  color: var(--primary-background-color);
 }
-.foto {
-}
+/* .foto {
+} */
 .filter {
   font-size: 18px;
   line-height: 2;
@@ -128,7 +131,7 @@ ul {
 }
 /* adress */
 .footerbg {
-  background-color: rgba(47, 48, 58, 1);
+  background-color: var(--hero-color);
 }
 .footer-nav .footer-link:hover,
 .footer-nav .footer-link:focus {
@@ -146,4 +149,30 @@ ul {
 }
 .navigation {
   color: var(--primary-background-color);
+}
+
+/* inex.html */
+.hero {
+  background-color: var(--hero-color);
+}
+.hero-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 13.6;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-background-color);
+}
+.button-hero {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: var(--primary-background-color);
+  background-color: var(--logo-link-color);
 }
