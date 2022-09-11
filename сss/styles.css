@@ -371,4 +371,5 @@ ul {
   margin-right: 30px;
 }
 .flex-element :nth-child(3n) {
+  margin-right: 30px;
 }
