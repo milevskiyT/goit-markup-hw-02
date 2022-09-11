@@ -14,7 +14,6 @@ body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
   letter-spacing: 0.03em;
@@ -22,6 +21,14 @@ body {
   background-color: var(--primary-background-color);
 }
 /* сховав точки */
+* {
+  outline: 2px solid tomato;
+}
+*,
+*::before *::after {
+  box-sizing: border-box;
+}
+
 ul {
   list-style: none;
 }
@@ -37,7 +44,25 @@ ul {
   clip-path: inset(50%);
   margin: -1px;
 }
-
+/* pading margim */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+ul {
+  padding-left: 0;
+}
+/* .container {
+  width: 1200;
+  margin: 0 auto;
+  padding: left 215px;
+  padding: left 215px; */
 /* LOGOGOGOGOGOGOG */
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -153,11 +178,14 @@ ul {
   color: var(--primary-background-color);
 }
 
-/* inex.html */
+/* hero section */
 .hero {
   background-color: var(--hero-color);
+  text-align: center;
+  width: 1600px;
 }
 .hero-title {
+  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -165,6 +193,7 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-background-color);
+  padding: 195px 452px 0px 452px;
 }
 .button-hero {
   font-family: inherit;
@@ -175,13 +204,28 @@ ul {
   color: var(--primary-background-color);
   background-color: var(--logo-link-color);
   cursor: pointer;
+  border-radius: 4px;
+  width: 216px;
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 205px;
 }
 .button-hero:hover,
 .button-hero:focus {
   color: var(--primary-background-color);
   background-color: var(--active-button);
 }
-/* пер(peculiarities)-особливості */
+/* пер(peculiarities)-особливості  */
+/* section 2  */
+
+.double {
+  display: flex;
+  margin-left: auto;
+  padding-top: 90px;
+}
+.textbox .peculiarities :not(:first-child) {
+  margin-left: 30px;
+}
 .peculiarities {
   text-transform: uppercase;
 }
@@ -191,6 +235,19 @@ ul {
   letter-spacing: 0.03em;
   color: var(--secondary-text);
 }
+/* section 3  */
+.boxcard {
+  display: flex;
+  padding-top: 50px;
+}
+.fotowork {
+  width: calc((100%-60px) / 3);
+  display: block;
+}
+.fotowork :not(:first-child) {
+  margin-left: 30px;
+}
+
 .section-tittle {
   font-weight: 700;
   font-size: 36px;
@@ -199,10 +256,25 @@ ul {
   text-align: center;
   color: var(--primary-text-color);
 }
+.pading-list {
+  padding: 94px 0px 0px 0px;
+}
+/* section team */
 
 .section-team {
   background-color: var(--second-background);
 }
+.team-foto-link {
+  display: flex;
+  padding-top: 50px;
+}
+.team-workers {
+  width: calc((100%-90px) / 4);
+}
+.team-workers:not(:first-child) {
+  margin-left: 30px;
+}
+
 .team {
   font-weight: 500;
   font-size: 16px;
@@ -218,3 +290,85 @@ ul {
 }
 /* /* cursor зі значенням pointer. */
 /* cursor: pointer; */
+/*  */
+
+.container {
+  width: 1200px;
+  margin: auto 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: aquamarine;
+  margin-left: 200px;
+}
+.header-container {
+  display: flex;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+.auth-nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.logo {
+  margin-left: 0;
+  margin-top: 25px;
+  margin-bottom: 24px;
+}
+.site-nav {
+  margin-left: 93px;
+}
+.site-nav-link:not(:first-child) {
+  margin-left: 50px;
+}
+.link-nav {
+  margin-left: 50px;
+}
+.team {
+  padding-top: 30px;
+  text-align: center;
+}
+.team-work {
+  padding-top: 10px;
+  text-align: center;
+}
+.footerbg {
+  padding-left: 215px;
+  padding-top: 32px;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+.footer-nav :not(:first-child) {
+  padding-top: 9px;
+}
+.team-foto-link {
+  padding-bottom: 94px;
+}
+.borderteam {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 270px;
+  height: 368px;
+}
+/* portfolio */
+.button {
+  display: flex;
+}
+.foto-link {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 94px;
+}
+.flex-element {
+  width: 370px;
+  margin-right: 30px;
+}
+.flex-element :nth-child(3n) {
+}

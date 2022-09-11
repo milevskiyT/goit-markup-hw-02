@@ -16,13 +16,15 @@
 
   <body>
     <!-- Heder -->
-    <header>
-      <nav>
+    <header class="header">
+      <nav class="container header-container">
         <a lang="en" href="./index.html" class="logo"> <span class="logoweb">Web</span>Studio </a>
         <ul class="site-nav list">
-          <li><a href="./index.html" class="link">Студія </a></li>
-          <li><a href="./portfolio.html" class="link curent">Портфоліо </a></li>
-          <li><a href="Контакти" class="link">Контакти </a></li>
+          <li class="site-nav-link"><a href="./index.html" class="link">Студія </a></li>
+          <li class="site-nav-link">
+            <a href="./portfolio.html" class="link curent">Портфоліо </a>
+          </li>
+          <li class="site-nav-link"><a href="Контакти" class="link">Контакти </a></li>
         </ul>
         <ul class="auth-nav list">
           <li>
@@ -35,90 +37,94 @@
       </nav>
     </header>
     <main>
-      <section filter-pege>
-        <h1 class="visually-hidden">Фільтри</h1>
-        <ul class="button list">
-          <li><button type="button" class="button-portfolio">Усі</button></li>
-          <li>
-            <button type="button" class="button-portfolio">Веб-сайти</button>
-          </li>
-          <li>
-            <button type="button" class="button-portfolio">Додаток</button>
-          </li>
-          <li>
-            <button type="button" class="button-portfolio">Дизайн</button>
-          </li>
-          <li>
-            <button type="button" class="button-portfolio">Маркетинг</button>
-          </li>
-        </ul>
-        <ul class="foto-link">
-          <li>
-            <a href="" class="link-filter"
-              ><img src="./images/img1.jpg" alt="Веб-сайт" width="370" height="295" />
-              <h2 class="filter">Технокряк</h2>
-              <p class="filter-foto">Веб-сайт</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link-filter"
-              ><img src="./images/img2.jpg" alt="Дизайн" width="370" height="295" />
-              <h2 class="filter">Постер New Orlean vs Golden Star</h2>
-              <p class="filter-foto">Дизайн</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link-filter"
-              ><img src="./images/img3.jpg" alt="Додаток" width="370" height="295" />
-              <h2 class="filter">Ресторан Seafood</h2>
-              <p class="filter-foto">Додаток</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link-filter"
-              ><img src="./images/img4.jpg" alt="Маркетинг" width="370" height="295" />
-              <h2 class="filter">Проєкт Prime</h2>
-              <p class="filter-foto">Маркетинг</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link-filter"
-              ><img src="./images/img5.jpg" alt="Додаток" width="370" height="295" />
-              <h2 class="filter">Проєкт Boxes</h2>
-              <p class="filter-foto">Додаток</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link-filter"
-              ><img src="./images/img6.jpg" alt="Веб-сайт" width="370" height="295" />
-              <h2 class="filter">Inspiration has no Borders</h2>
-              <p class="filter-foto">Веб-сайт</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link-filter"
-              ><img src="./images/img7.jpg" alt="Дизайн" width="370" height="295" />
-              <h2 class="filter">Видання Limited Edition</h2>
-              <p class="filter-foto">Дизайн</p></a
-            >
-          </li>
-          <li>
-            <a href="" class="link-filter"
-              ><img src="./images/img8.jpg" alt="Маркетинг" width="370" height="295" />
-              <h2 class="filter">Проєкт LAB</h2>
-              <p class="filter-foto">Маркетинг</p></a
-            >
-          </li>
+      <div class="container">
+        <section filter-pege>
+          <h1 class="visually-hidden">Фільтри</h1>
+          <ul class="button list">
+            <li><button type="button" class="button-portfolio">Усі</button></li>
+            <li>
+              <button type="button" class="button-portfolio">Веб-сайти</button>
+            </li>
+            <li>
+              <button type="button" class="button-portfolio">Додаток</button>
+            </li>
+            <li>
+              <button type="button" class="button-portfolio">Дизайн</button>
+            </li>
+            <li>
+              <button type="button" class="button-portfolio">Маркетинг</button>
+            </li>
+          </ul>
+          <div class="foto-container">
+            <ul class="foto-link">
+              <li class="flex-element">
+                <a href="" class="link-filter"
+                  ><img src="./images/img1.jpg" alt="Веб-сайт" width="370" height="295" />
+                  <h2 class="filter">Технокряк</h2>
+                  <p class="filter-foto">Веб-сайт</p></a
+                >
+              </li>
+              <li class="flex-element">
+                <a href="" class="link-filter"
+                  ><img src="./images/img2.jpg" alt="Дизайн" width="370" height="295" />
+                  <h2 class="filter">Постер New Orlean vs Golden Star</h2>
+                  <p class="filter-foto">Дизайн</p></a
+                >
+              </li>
+              <li class="flex-element">
+                <a href="" class="link-filter"
+                  ><img src="./images/img3.jpg" alt="Додаток" width="370" height="295" />
+                  <h2 class="filter">Ресторан Seafood</h2>
+                  <p class="filter-foto">Додаток</p></a
+                >
+              </li>
+              <li class="flex-element">
+                <a href="" class="link-filter"
+                  ><img src="./images/img4.jpg" alt="Маркетинг" width="370" height="295" />
+                  <h2 class="filter">Проєкт Prime</h2>
+                  <p class="filter-foto">Маркетинг</p></a
+                >
+              </li>
+              <li class="flex-element">
+                <a href="" class="link-filter"
+                  ><img src="./images/img5.jpg" alt="Додаток" width="370" height="295" />
+                  <h2 class="filter">Проєкт Boxes</h2>
+                  <p class="filter-foto">Додаток</p></a
+                >
+              </li>
+              <li class="flex-element">
+                <a href="" class="link-filter"
+                  ><img src="./images/img6.jpg" alt="Веб-сайт" width="370" height="295" />
+                  <h2 class="filter">Inspiration has no Borders</h2>
+                  <p class="filter-foto">Веб-сайт</p></a
+                >
+              </li>
+              <li class="flex-element">
+                <a href="" class="link-filter"
+                  ><img src="./images/img7.jpg" alt="Дизайн" width="370" height="295" />
+                  <h2 class="filter">Видання Limited Edition</h2>
+                  <p class="filter-foto">Дизайн</p></a
+                >
+              </li>
+              <li class="flex-element">
+                <a href="" class="link-filter"
+                  ><img src="./images/img8.jpg" alt="Маркетинг" width="370" height="295" />
+                  <h2 class="filter">Проєкт LAB</h2>
+                  <p class="filter-foto">Маркетинг</p></a
+                >
+              </li>
 
-          <li>
-            <a href="" class="link-filter"
-              ><img src="./images/img9.jpg" alt="Веб-сайт" width="370" height="295" />
-              <h2 class="filter">Growing Business</h2>
-              <p class="filter-foto">Додаток</p></a
-            >
-          </li>
-        </ul>
-      </section>
+              <li class="flex-element">
+                <a href="" class="link-filter"
+                  ><img src="./images/img9.jpg" alt="Веб-сайт" width="370" height="295" />
+                  <h2 class="filter">Growing Business</h2>
+                  <p class="filter-foto">Додаток</p></a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
     </main>
     <!-- adress -->
     <footer class="footerbg">
@@ -127,7 +133,7 @@
       >
       <address>
         <ul class="footer-nav list">
-          <li>
+          <li class="navadress">
             <a
               href="https://goo.gl/maps/pRwfF4WAniWBqefx9"
               target="_blank"
@@ -136,10 +142,10 @@
               >м. Київ, пр-т Лесі Українки, 26
             </a>
           </li>
-          <li>
+          <li class="navadress">
             <a href="mailto:info@devstudio.com" class="footer-link">info@devstudio.com</a>
           </li>
-          <li>
+          <li class="navadress">
             <a href="tel:+380961111111" class="footer-link">+38 096 111 11 11</a>
           </li>
         </ul>
